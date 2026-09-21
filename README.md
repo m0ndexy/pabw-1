@@ -1,27 +1,20 @@
-# Praktikum Pemrograman Aplikasi Berbasis Web (PABW)
-## Pertemuan 3: HTML5 Semantik, Form, Media & Aksesibilitas
----
-
-### Hasil Pemeriksaan & Uji Aksesibilitas (Lembar F)
-
-- **Lighthouse — Accessibility:** **94 / 100**
-  - Catatan: Terdapat sorotan minor pada ukuran target sentuh (*target-size*) tautan navigasi karena halaman belum diberi gaya CSS (*padding/margin* area klik), yang akan dipelajari pada Pertemuan 4.
-- **Temuan axe DevTools:** 0 pelanggaran kritis (*0 issues*).
-- **Uji Navigasi Keyboard (Papan Ketik):** Lancar. Seluruh tautan dan elemen formulir dapat difokuskan berurutan dengan tombol `Tab` tanpa terjebak (*no focus trap*).
-- **Uji Tautan Navigasi:** Semua benar. Tautan melompat tepat ke `#bagian-1`, `#bagian-2`, dan `#footer`.
-- **Uji Label:** Semua benar. Setiap `<label for>` terhubung langsung ke `<input id>`, sehingga saat teks label diklik kursor langsung aktif di kolom isian.
-
----
-
-### Pengungkapan Penggunaan AI (AI Disclosure)
-
-Sesuai dengan ketentuan integritas akademik pada Lembar G:
-
-1. **Bagian yang Dikerjakan Mandiri:**
-   - Menentukan topik dan ide orisinal halaman (*Mengatur Jam Perjalanan*).
-   - Memilih dan menyertakan berkas gambar maskot/ilustrasi perjalanan (`images.jpg`).
-   - Menyusun kerangka halaman, tabel data jadwal perjalanan, serta kolom formulir rencana perjalanan.
-
-2. **Bagian yang Dibantu AI:**
-   - **Audit Lighthouse Accessibility:** Menjalankan pengujian Lighthouse untuk kategori *Accessibility* serta mencatat skor dan analisis temuannya, dikarenakan tab Lighthouse di peramban Chrome pengguna tidak menampilkan opsi pengujian *Accessibility*.
-   - Konsultasi pengecekan mandiri terhadap checklist kelengkapan elemen semantik HTML5 dan rubrik penilaian.
+# PABW — Ahmad Dani Maulana — 25523190
+ 
+Repo ini memuat pekerjaan mata kuliah Pengembangan Aplikasi
+Berbasis Web, satu folder untuk setiap pertemuan.
+ 
+## Pertemuan 3 — Halaman profil saya
+ 
+Topik halaman saya: Mengatur jam route perjalanan saya.
+ 
+- Judul halaman: Mengatur Jam Perjalanan
+- Deskripsi: Halaman untuk mengelola dan mencatat jadwal perjalanan antarkota secara efisien.
+- Tautan navigasi: Home, Journey, Footer
+- Dua bagian utama: Daftar Jadwal Perjalanan, Formulir Rencana Perjalanan
+- Kolom tabel: Rute Perjalanan, Jam Berangkat, Jam Tiba, Moda Transportasi
+- Kolom form: Tanggal Berangkat, Jam Terbang, Jam Tiba
+- Gambar: images.jpg
+ 
+## Catatan penggunaan AI
+ 
+- **Bagian yang dibantu AI:** Menjalankan audit Lighthouse *Accessibility* (skor 94) dikarenakan opsi pengujian *Accessibility* tidak tersedia/tidak muncul pada browser Chrome pengguna, serta verifikasi kelengkapan tag semantik dan perbaikan kesalahan sintaks kecil.
