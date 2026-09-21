@@ -1,9 +1,5 @@
 # Praktikum Pemrograman Aplikasi Berbasis Web (PABW)
 ## Pertemuan 3: HTML5 Semantik, Form, Media & Aksesibilitas
-
-**Topik Halaman:** Mengatur Jam Perjalanan  
-**Berkas Utama:** `worksheet-p3/profil.html`
-
 ---
 
 ### Hasil Pemeriksaan & Uji Aksesibilitas (Lembar F)
