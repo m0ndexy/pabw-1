@@ -1,52 +1,39 @@
 <!DOCTYPE html>
-<!--
-  KERANGKA AWAL — Halaman Profil Saya
-  PABW 2026/2027 · Pertemuan 3
-
-  Cara pakai:
-  1. Salin berkas ini, ganti nama menjadi profil.html
-  2. Ganti setiap tulisan TODO dengan isi milik Anda SENDIRI
-  3. Simpan, lalu buka di peramban (F5 untuk memuat ulang)
-  4. Kerjakan berurutan mengikuti Lembar B, C, D, dan E pada worksheet
-
-  Jangan menghapus komentar TODO sebelum bagian itu Anda kerjakan —
-  komentar itu adalah daftar periksa Anda sendiri.
--->
 <html lang="id">
 
 <head>
    <title>Mengatur Jam Perjalanan</title>
-   <!-- TODO B.1: tambahkan dua baris meta di bawah ini:
-       <meta charset="...">
-       <meta name="viewport" content="...">  -->
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="tema.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="tokens.css">
    <link rel="stylesheet" href="base.css">
    <link rel="stylesheet" href="layout.css">
    <link rel="stylesheet" href="komponen.css">
-   <link rel="stylesheet" href="token.css">
+   <link rel="stylesheet" href="tema.css">
 </head>
 
 <body>
-
-   <!-- TODO C.1: buat <header> di sini.
-       Isinya: satu <h1> berisi judul halaman Anda.
-       Di dalamnya juga ada <nav> berisi 3 tautan ke bagian halaman. -->
    <header>
-      <h1>Mengatur Jam Perjalanan</h1>
-      <nav id="navbar">
-         <ul>
-            <li><a href="#bagian-1">Home</a></li>
-            <li><a href="#bagian-2">Journey</a></li>
-            <li><a href="#footer">Footer</a></li>
-         </ul>
-      </nav>
+      <input type="checkbox" id="tema" class="pengalih-tema">
+      <div class="header-baris">
+         <h1>Mengatur Jam Perjalanan</h1>
+         <div class="header-kanan">
+            <nav class="navbar">
+               <ul>
+                  <li><a href="#bagian-1">Home</a></li>
+                  <li><a href="#bagian-2">Journey</a></li>
+                  <li><a href="#footer">Footer</a></li>
+               </ul>
+            </nav>
+            <label for="tema" class="tombol-tema">Tema Gelap</label>
+         </div>
+      </div>
    </header>
-   <!-- TODO C.2: buat <main> di sini sebagai pembungkus semua bagian isi.
-       Di dalamnya ada 2 <section>, masing-masing punya <h2> sendiri. -->
    <main>
-      <section id="bagian-1">
+      <section id="bagian-1" class="kartu">
          <h2>Daftar Jadwal Perjalanan</h2>
          <table>
             <caption>Jadwal Keberangkatan dan Estimasi Waktu Perjalanan</caption>
@@ -87,7 +74,7 @@
          </table>
       </section>
 
-      <section id="bagian-2">
+      <section id="bagian-2" class="kartu">
          <h2>Formulir Rencana Perjalanan</h2>
          <figure>
             <img src="images.jpg" alt="moving out" width="640" height="360" loading="lazy">
@@ -95,34 +82,26 @@
                ujungnya yang sedang pergi melakukan perjananan.</figcaption>
          </figure>
          <form action="/simpan" method="post">
-            <p>
+            <div class="form-kolom">
                <label for="tanggal">Tanggal Berangkat</label>
                <input type="date" id="tanggal" name="tanggal" required>
-            </p>
-            <p>
+               <span class="pesan-galat">Tanggal berangkat wajib diisi.</span>
+            </div>
+            <div class="form-kolom">
                <label for="jam-terbang">Jam Terbang</label>
                <input type="text" id="jam-terbang" name="jam-terbang" required>
-            </p>
-            <p>
+               <span class="pesan-galat">Jam terbang wajib diisi.</span>
+            </div>
+            <div class="form-kolom">
                <label for="jam-tiba">Jam Tiba</label>
                <input type="text" id="jam-tiba" name="jam-tiba" required>
-            </p>
-            <!-- tambahkan minimal dua kolom lagi -->
+               <span class="pesan-galat">Jam tiba wajib diisi.</span>
+            </div>
             <button type="submit">Simpan</button>
          </form>
       </section>
 
    </main>
-
-   <!-- TODO D.1: di dalam section pertama, buat tabel data Anda.
-         Wajib ada: <caption>, <thead>, <th scope="col">, dan minimal 3 baris data. -->
-
-   <!-- TODO E.1: di dalam section kedua, buat form Anda.
-         Wajib ada: minimal 3 kolom, setiap kolom punya <label for> yang
-         cocok dengan id input-nya, dan satu atribut validasi. -->
-
-   <!-- TODO C.3: buat <footer> di sini.
-       Isinya: nama Anda, NIM Anda, dan tahun. -->
    <footer id="footer">
       <p>Ahmad Dani Maulana · 25523190 · 2026</p>
    </footer>

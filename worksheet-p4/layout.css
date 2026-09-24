@@ -1,37 +1,65 @@
-/* LAPIS 1 — primitif: nilai mentah, tidak menyebut peran apa pun */
-:root {
-    --color-bg: #f4f4f5;
-    --color-fg: #000;
-    --color-surface: #ffffff;
-    --color-border: #d4d4d7;
-    --color-primary: #000000;
-    --color-danger: #e1214b;
-    --color-focus: #4682b4;
-
-    --space-1: 0.5rem;
-    --space-2: 1rem;
-    --space-3: 2rem;
-    --space-4: 4rem;
-    --space-6: 6rem;
-
-    --radius-md: 0.5rem;
-    --radius-full: 1rem;
-
-    --shadow-1: 0 1px 3px rgba(0, 0, 0, 0.10);
-
-    --textsm: 0.75rem;
-    --text-md: 1rem;
-    --text-xl: 2rem;
-    --text-3xl: 4rem;
+header {
+  padding-block: var(--space-4);
+  border-bottom: 1px solid var(--color-border);
 }
 
-/* LAPIS 2 — semantik: peran. Isinya mengacu ke lapis 1. */
-:root {
-    --color-primary: var(--color-primary);
-    --color-fg: var(--color-fg);
-    --color-bg: var(--color-bg);
-    --color-surface: var(--color-surface);
-    --color-border: var(--color-border);
-    --color-danger: var(--color-danger);
-    --color-focus: var(--color-focus);
+.header-baris {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.header-kanan {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+nav ul {
+  display: flex;
+  gap: var(--space-4);
+  list-style: none;
+  padding: 0;
+}
+
+nav a {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: var(--section-gap);
+  padding-block: var(--space-6);
+}
+
+.katalog {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+}
+
+.kartu {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-1);
+  padding: var(--card-pad);
+}
+
+footer {
+  margin-top: var(--space-6);
+  padding-block: var(--space-4);
+  border-top: 1px solid var(--color-border);
+  color: var(--color-fg);
+  font-size: var(--text-sm);
 }
